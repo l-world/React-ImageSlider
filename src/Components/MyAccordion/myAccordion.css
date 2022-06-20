@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.accordion-container{
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 20px;
+    margin: 20px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.accordion__section{
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion{
+    display: flex;
+    align-items: center;
+    padding: 20px ;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-weight: 700;
+}
+
+.accordion__icon{
+    margin-right: 10px;
+}
+.accoridon__title{
+    margin-right: auto;
+}
+
+.accordion__arrow {
+    transition: transform 0.6s ease;
+}
+
+.active{
+    border-bottom: none;
+}
+
+.rotate {
+    transform: rotate(90deg);
+  }
+
+.accordion__content{
+    background-color: white;
+    /* overflow: auto; */
+    transition: max-height  0.6s ease;
+}
+
+/* feed-sort */
+
+.wrap--feed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #ebebeb;
+}
+.wrap--feed_ul{
+    cursor: pointer;
+    padding: 30px 0;
+}
+.feed--item{
+    list-style: none;
+    margin-bottom: 20px;
+    color: rgb(128, 120, 120);
+    cursor: pointer;
+}
+.feed--item:last-of-type{
+    margin-bottom: 0;
+}
+.feed--item_input{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.feed--item_label{
+    cursor: pointer;
+}
+
+/*设置复选框的样式*/
+.feed--item_input[type=checkbox]{
+	width: 15px;
+	height: 15px;
+	background-color:none;
+	zoom: 1;
+	outline: none;
+	-webkit-appearance:none;/*去除默认样式*/
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-appearance:none;
+	-ms-appearance:none;
+}
+
+/*设置复选框选中时的样式*/
+.feed--item_input[type=checkbox]:checked{
+	background-image: url(./Icon/checkmark.svg);/*引入背景图*/
+	background-size:100%;/*设置背景图大小*/
+}
+
+.feed--item_input[type=checkbox]:checked + label{
+    color: #000;
+    font-weight: 600;
+}
+
+/* todo list */
+
+.wrap--todo{
+    background-color: #ebebeb;
+}
+
+.wrap--todo_ul{
+    padding: 30px 0;
+}
+
+.todo--item{
+    min-width: 100px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.todo--item_icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+
+.todo--item_text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.todo--item:last-of-type > .todo--item_text{
+    color: blue;
+}
+
+.wrap-discord{
+    padding: 0px 30px 30px;
+    background-color: white;
+    z-index: 1000;
+}
