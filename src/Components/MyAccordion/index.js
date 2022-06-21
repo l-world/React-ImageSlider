@@ -1,5 +1,6 @@
 import React from 'react'
 import './myAccordion.css'
+
 import Accordion from './MyAccordion'
 import FeedSort from './FeedSort'
 import sortIcon from './Icon/sort.svg'

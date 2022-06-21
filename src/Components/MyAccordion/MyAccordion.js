@@ -1,7 +1,5 @@
 import React from 'react'
-// import './myAccordion.css'
 import Arrow from './Arrow'
-
 
 export default function MyAccordion(props) {
 
